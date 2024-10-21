@@ -3,6 +3,7 @@
 {% block title %}View my notepads{% endblock %}
 
 {% block content %}
+<a href="{{ url_for('notepad.create_notepad') }}" class="submit">Create New Notepad</a>
 
 {% if notepads %}
     <ul>
